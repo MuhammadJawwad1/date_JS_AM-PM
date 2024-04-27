@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var now = new Date();
+        console.log(now);
+         var dayNames = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat","Sun" ];
+        var now = new Date();
+        var theDay = now.getDay();
+        var nameOfToday = dayNames[theDay];
+        console.log(nameOfToday);
+        console.log(theDay);
+        
+        //Time AM PM detection
+
+        var myDate = new Date();
+        var myTime = myDate.getHours()
+        if(myTime < 12){
+            console.log(`${myTime} ==>AM`);
+        }
+        else{
+            console.log(`${myTime} ==>PM`);
+        }
+       
+        
+
+
+        
+    </script>
+</body>
+</html>
